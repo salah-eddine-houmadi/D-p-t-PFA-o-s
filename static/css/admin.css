@@ -1,0 +1,58 @@
+body{
+ background:#548CA8;
+}
+.title{
+         display: flex;
+         justify-content: center;
+         margin: 25px auto;
+      }
+.title h1{
+         margin: auto;
+         display: inline-block;
+         position: relative;
+         color:#EEEEEE;
+      }
+.title h1:after,
+      h1:before{
+         content: "";
+         position: absolute;
+         bottom: -4px;
+         width: 90%;
+         height: 5px;
+         left: 50%;
+         transform: translateX(-50%);
+         border-radius: 10px;
+         background: #eee;
+      }
+.title h1:before{
+         width: 30%;
+         bottom: -15px;
+      }
+.main{
+   padding: 15px;
+   font-family: sans-serif;
+}
+.topbar{
+   background: #548CA8;
+   overflow: hidden;
+}
+.topbar a{
+   float: right;
+   color: #F9F9F9;
+   text-align: center;
+   padding: 20px 25px;
+   text-decoration: none;
+   font-size: 19px;
+}
+.box{
+    background:#548CA8;
+    border-radius:20px;
+    height:300px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    padding:10px;
+    margin:10px auto;
+
+}

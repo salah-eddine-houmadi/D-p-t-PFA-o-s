@@ -1,0 +1,98 @@
+*{
+   box-sizing: border-box;
+}
+body{
+   margin-top: 20px;
+   background: #fff;
+}
+.main{
+   padding: 15px;
+   font-family: sans-serif;
+}
+.topbar{
+   background: #014667;
+   overflow: hidden;
+}
+.topbar a{
+   float: right;
+   color: #F9F9F9;
+   text-align: center;
+   padding: 20px 25px;
+   text-decoration: none;
+   font-size: 19px;
+}
+.sidebar{
+   background: #014667;
+   color: #eee;
+   height: 100%;
+}
+.sidebar h2{
+   color: #F9F9F9;
+   font-weight: bold;
+   margin-bottom:100px;
+   letter-spacing:1px;
+}
+.sidebar a{
+   margin-left: 10px;
+   display: block;
+   color: #fff;
+   padding-bottom: 10px;
+   padding-top: 10px;
+   margin-top: 15px;
+   font-size: 25px;
+   text-decoration: none;
+}
+.card{
+   position: relative;
+   display: flex;
+   flex-direction: column;
+}
+.content{
+   background: #E6DDC6;
+}
+.page-header{
+   color:#fff;
+   padding:10px;
+
+}
+.sci{
+margin-top: 10px;
+}
+.sci li{
+list-style: none;
+display: inline-block;
+}
+
+.sci li a{
+display: inline-block;
+width: 48px;
+height: 48px;
+display: flex;
+align-items: center;
+justify-content: center;
+text-decoration: none;
+border-radius: 4px;
+background: #171010;
+color: #fff;
+font-size: 25px;
+padding: 10px;
+}
+.sci li a:hover{
+background: #014667;
+}
+button:hover, a:hover {
+  opacity: 0.7;
+
+}
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 80%;
+  font-size: 18px;
+}

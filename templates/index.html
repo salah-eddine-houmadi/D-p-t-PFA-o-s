@@ -1,0 +1,112 @@
+{% extends 'base.html' %}
+
+{% block styles %}
+{{super()}}
+<link rel="stylesheet" type="text/css" href="{{ url_for('.static',filename='css/starter-template.css') }}">
+{% endblock %}
+
+{% block content %}
+
+
+       <article id="about">
+
+            <div class = "image">
+                <!-- image here -->
+            </div>
+
+            <div class = "content">
+                <h2>About Us</h2>
+                <span><!-- line here --></span>
+
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis aspernatur voluptas inventore ab voluptates nostrum minus illo laborum harum laudantium earum ut, temporibus fugiat sequi explicabo facilis unde quos corporis!</p>
+
+                <ul class = "links">
+                    <li><a href = "#">work</a></li>
+
+                    <div class = "vertical-line"></div>
+
+                    <li><a href = "#">service</a></li>
+
+                    <div class = "vertical-line"></div>
+
+                    <li><a href = "#">contact</a></li>
+                </ul>
+
+                <ul class = "icons">
+                    <li>
+                        <i class = "fa fa-twitter"></i>
+                    </li>
+                    <li>
+                        <i class = "fa fa-facebook"></i>
+                    </li>
+                    <li>
+                        <i class = "fa fa-github"></i>
+                    </li>
+                    <li>
+                        <i class = "fa fa-pinterest"></i>
+                    </li>
+                </ul>
+            </div>
+        </article>
+   <h1 class="services-title" id="service">Our Service</h1>
+   <div id="cont">
+     <div class="OR">
+    <div class="SA">
+    <h2>01</h2>
+    <h3>Service One</h3>
+    <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur.
+    </p>
+    <a href="">Read More</a>
+    </div>
+     </div>
+       <div class="OR">
+    <div class="SA">
+    <h2>02</h2>
+    <h3>Service Two</h3>
+    <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur.
+    </p>
+    <a href="">Read More</a>
+    </div>
+     </div>
+       <div class="OR">
+    <div class="SA">
+    <h2>03</h2>
+    <h3>Service Three</h3>
+    <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur.
+    </p>
+    <a href="">Read More</a>
+    </div>
+     </div>
+       <div class="OR">
+    <div class="SA">
+    <h2>04</h2>
+    <h3>Service Four</h3>
+    <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur.
+    </p>
+    <a href="">Read More</a>
+    </div>
+     </div>
+
+   </div>
+
+{% endblock %}

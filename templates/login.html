@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+{% block title %}
+Login
+{% endblock %}
+
+{% block styles %}
+{{super()}}
+<link rel="stylesheet" href="{{url_for('.static', filename='css/signin.css')}}">
+{% endblock %}
+
+{% block content %}
+<section class="Form my-4 mx-5">
+<div class="container-fuild">
+<div class="row no-gutters">
+<div class="col-lg-5">
+<img src="{{ url_for('static',filename='img/7.jpg') }}" class="img-fuild">
+</div>
+<div class="col-lg-7 px-5 pt-5">
+<form action="/login" method="POST">
+  {{ form.hidden_tag() }}
+<div class="form-row">
+<div class="col-lg-7">
+{{ wtf.form_field(form.username) }}
+</div>
+</div>
+<div class="form-row">
+<div class="col-lg-7">
+{{ wtf.form_field(form.password) }}
+</div>
+</div>
+  <div class="form-row">
+<div class="col-lg-7">
+ {{ wtf.form_field(form.remember) }}
+</div>
+</div>
+<div class="form-row">
+<div class="col-lg-7">
+<button type="submit" class="btn1 mb-2">Login</button>
+</div>
+</div>
+<a href="#">Forgot Password ?</a>
+<p>Don't an account ? <a href="{{ url_for('signup') }}">Register here</a></p>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!--  -->
+{% endblock %}

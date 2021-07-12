@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+<title>Welcomme</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<!-- FontAwesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- FontGoogle -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/index.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('.static',filename='css/starter-template.css') }}">
+    <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<header>
+<div class="header_inner">
+<div class="container-fuild px-lg-5">
+<nav class="navbar navbar-expand-lg navbar-light my-navbar">
+ <div class="container-fluid">
+   <a class="navbar-brand" href="#"><span class="logo">
+    <img src="{{ url_for('static',filename='img/log3.png') }}" class="img-fuild" style="width: 180px;height: 80px;">
+   </a></span>
+   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+     <span class="navbar-toggler-icon"></span>
+   </button>
+   <div class="collapse navbar-collapse" id="navbarSupportedContent">
+     <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+       <li class="nav-item">
+         <a class="nav-link active" aria-current="page" href="#">Home</a>
+       </li>
+       <li class="nav-item">
+         <a class="nav-link" href="#about">About</a>
+       </li>
+       <li class="nav-item">
+         <a class="nav-link" href="#service">Service</a>
+       </li>
+       <li class="nav-item">
+         <a class="nav-link" href="#footer">Contact</a>
+       </li>
+     </ul>
+       <a href="{{ url_for('signup') }}" class="btn-login"><i class="fas fa-user-plus"></i></a>
+       <a href="{{ url_for('logout') }}" class="btn-login"><i class="fas fa-sign-in-alt"></i></a>
+   </div>
+ </div>
+</nav>
+</div>
+</div>
+</header>
+<!--  -->
+<section class="content-banner">
+<div class="container">
+<div class="row d-flex justify-content-center">
+<div class="col-md-12">
+<div class="banner-con text-center">
+<p class="first-title">Welcome to Our School..</p>
+<p class="banner-des">Design,Developement,Marketing,Comunication...</p>
+<a href="{{ url_for('logout') }}" class="banner-btn">Get Star</a><!--  -->
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contente  -->
+{% block content %}
+dsf
+{% endblock %}
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<!-- Jquery -->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script>
+$(function(){
+var navbar = $(".header_inner");
+$(window).scroll(function(){
+if($(window).scrollTop() <= 85){
+navbar.removeClass('navbar-scroll');
+}else{
+navbar.addClass('navbar-scroll');
+}
+});
+});
+</script>
+<footer id="footer">
+<div class="container">
+<div class="sec aboutus">
+<h2>About-Us</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat .</p>
+<ul class="sci">
+<li><a href="#"><i class="fab fa-facebook"></i></a></li>
+<li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+<li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
+<li><a href="#"><i class="fab fa-youtube"></i></a></li>
+</ul>
+</div>
+<div class="sec quicklinks">
+<h2>Quick Links</h2>
+<ul>
+<li><a href="#">Lorem</a></li>
+<li><a href="#">Lorem</a></li>
+<li><a href="#">Lorem</a></li>
+<li><a href="#">Lorem</a></li>
+</ul>
+</div>
+<div class="sec quicklinks">
+<h2>Services</h2>
+<ul>
+<li><a href="#">Lorem</a></li>
+<li><a href="#">Lorem</a></li>
+<li><a href="#">Lorem</a></li>
+<li><a href="#">Lorem</a></li>
+</ul>
+</div>
+<div class="sec contact">
+<h2>Contact</h2>
+<ul class="info">
+<li>
+<span>
+<i class="fas fa-map-marker-alt"></i>
+</span>
+<span>
+638 HAY SALAM <br>
+Agadir pA 2021<br>
+   MAROC
+</span>
+</li>
+<li>
+<span><i class="fas fa-phone"></i></span>
+<p><a href="tel:+2120678715073">+2120678715073</a><br>
+    <span><i class="fas fa-phone"></i></span>
+<a href="tel:+2120621166150">+2120621166150</a>
+</p>
+</li>
+<li>
+<span><i class="fas fa-envelope"></i></span>
+<p><a href="mailto:salah.houmadi@gmail.com">salah.houmadi@gmail.com</a></p>
+    <span><i class="fas fa-envelope"></i></span>
+<p><a href="mailto:omartoraif803@gmail.com">omartoraif803@gmail.com</a></p>
+</li>
+</ul>
+</div>
+</div>
+</footer>
+<div class="copyrightText">
+<p>Copyright @ 2021 online Tutorils.all Rights Resrved.</p>
+</div>
+</body>
+</html>
